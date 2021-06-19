@@ -145,11 +145,12 @@ public class QLCB extends CanBo {
         ArrayList<CanBo> canBos = new ArrayList<>();
         String findname = scanner.nextLine();
         for (CanBo element : arrayList) {
+
             if (((CongNhan) element).getCareer().equals(findname)) {
                 canBos.add(element);
-                if (((KySu) element).getCareer().equals(findname)) {
-                    canBos.add(element);
-                }
+            }
+            if (((KySu) element).getCareer().equals(findname)) {
+                canBos.add(element);
             }
         }
         for (CanBo c : canBos) {
