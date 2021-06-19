@@ -151,19 +151,20 @@ public class QLCB extends CanBo {
                     canBos.add(element);
                 }
             }
-            for (CanBo c : canBos) {
-                System.out.println(c);
-            }
         }
-
-        public static void sort () {
-            CanBo canBo = new CanBo();
-            arrayList.sort(canBo);
-        }
-
-        public static void show () {
-            for (CanBo c : arrayList) {
-                System.out.println(c);
-            }
+        for (CanBo c : canBos) {
+            System.out.println(c);
         }
     }
+
+    public static void sort() {
+        CanBo canBo = new CanBo();
+        arrayList.sort(canBo);
+    }
+
+    public static void show() {
+        for (CanBo c : arrayList) {
+            System.out.println(c);
+        }
+    }
+}
