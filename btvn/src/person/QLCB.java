@@ -144,17 +144,19 @@ public class QLCB extends CanBo {
         System.out.print("enter career that you want find name: ");
         ArrayList<CanBo> canBos = new ArrayList<>();
         String findname = scanner.nextLine();
-        for (CanBo element : arrayList) {
-
-            if (((CongNhan) element).getCareer().equals(findname)) {
-                canBos.add(element);
-            }
-            if (((KySu) element).getCareer().equals(findname)) {
-                canBos.add(element);
+        for (CanBo element: arrayList) {
+            if (element instanceof CongNhan) {
+                if (((CongNhan) element).getCareer().equals(findname)) {
+                    canBos.add(element);
+                }
+            } else if (element instanceof KySu) {
+                if (((KySu) element).getCareer().equals(findname)) {
+                    canBos.add(element);
+                }
             }
         }
-        for (CanBo c : canBos) {
-            System.out.println(c);
+        for (CanBo x: canBos) {
+            System.out.println(x);
         }
     }
 
