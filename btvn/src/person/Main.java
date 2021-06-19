@@ -1,4 +1,4 @@
-package com.company;
+package person;
 
 import person.CanBo;
 import person.CongNhan;
