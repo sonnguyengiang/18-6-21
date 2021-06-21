@@ -143,6 +143,7 @@ public class QLCB extends CanBo {
     public static void showNameByCareer() {
         System.out.print("enter career that you want find name: ");
         ArrayList<CanBo> canBos = new ArrayList<>();
+        CanBo test;
         String findname = scanner.nextLine();
         for (CanBo element: arrayList) {
             if (element instanceof CongNhan) {
